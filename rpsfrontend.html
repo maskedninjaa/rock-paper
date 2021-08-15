@@ -65,6 +65,19 @@
             font-weight: bold;
         }
 
+        .choice {
+            margin: 50px;
+            padding: 5px;
+            display: block;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .choice:hover {
+            cursor: pointer;
+            background: #24262E;
+        }
+
         #action-message {
             text-align: center;
             color: white;
@@ -92,10 +105,15 @@
     </div>
 
     <div class = "choices">
-        <div class ="choice">
-            <img src="" alt ="">
+        <div class ="choice" id="r">
+            <img src="rock.png" alt ="">
         </div>
+        <div class ="choice" id="p">
+            <img src="paper.png" alt ="">
     </div>
+    <div class ="choice" id="s">
+        <img src="scissors.png" alt ="">
+        </div>
     <p id="action-message">Make your move</p>
     <script src="rps.js" charset="utf-8"></script>
 </body>
